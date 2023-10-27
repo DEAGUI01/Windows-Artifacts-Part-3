@@ -2,14 +2,16 @@
 
 
 <h2>Description</h2>
-This project involves a comprehensive exercise in forensic image conversion and analysis using tools like FTK Imager and WinHex. I delve deep into the technicalities of forensic imaging and analysis which is a critical skill in the field of digital forensics. This hands-on project is structured into several sections which that go through various tasks including forensic image conversion, working with alternate data streams (ADS), and parsing Master File Table (MFT) records. It includes the following tasks:
+In this investigative project, a comprehensive forensic analysis was conducted on a Windows 10 Pro environment to inspect various system artifacts. Utilizing a suite of specialized tools including $I_Parse, Evtx Explorer, Notepad, Timeline Explorer, and PECmd, each phase of the project revealed critical insights into user and system activities over a period of time. It includes the following tasks:
 <br />
 <br />
-- <b>Forensic Image Conversion using FTK Imager</b> 
+- <b>Analysis of $Recycle.Bin Files</b> 
 <br />
-- <b>Working with Alternate Data Streams</b>
+- <b>Scheduled Tasks Analysis</b>
 <br />
-- <b>Parsing MFT Records</b>
+- <b>Event Logs Parsing and Analysis</b>
+<br />
+- <b>Prefetch Files Analysis</b>
 <br />
 
 
@@ -131,6 +133,8 @@ the sync command after downloading Evtx Explorer to download the latest maps (�
 <br />
 <br />
 Answer the following questions:
+<br />
+<br />
 1) When was the most recent event record created?
 <img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
 <br />
@@ -274,103 +278,102 @@ Parse the Prefetch files in the “Prefetch” folder using PECmd <br/>
 <br />
 <br />
 Answer the following questions:
+<br />
+<br />
 1) Based on analysis of the Prefetch files, what is the name of the program executed most
 recently?
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/sBsarPY.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+SVCHOST.EXE
 <br />
 <br />
 2) Based on analysis of the Prefetch files, how many different program executions occurred
 on January 28, 2017?
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/s761VgT.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+65
 <br />
 <br />
 3) Based on analysis of the Prefetch files, what is the most recent execution time of
 “\VOLUME{01d2783140af8e9f-14412537}\WINDOWS\SYSWOW64\CMD.EXE”? 
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/WdEcAlM.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+2017-02-02 22:25:37
 <br />
 <br />
 4) Based on analysis of the Prefetch files, how many times was WMIC.exe executed?
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/xAIXVqU.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+10 Times
 <br />
 <br />
 5) What is the volume serial number of the volume from which WMIC.exe was executed?
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/ugfHHyk.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+14412537
 <br />
 <br />
 6) Based on analysis of the Prefetch files, what is the number of locations from which
 CMD.exe has been executed?
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/bEd1Q2J.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+3 different locations
 <br />
 <br />
 7) What is the operating system version associated with the parsed Prefetch files?
-
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/4A2xKPC.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+Windows 10 or Windows 11
 <br />
 <br />
 8) Based on analysis of the Prefetch files, what is the name of the program that has been
 executed 62 times from a single location?
 
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/c8d9sBc.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+CHROME.EXE
 <br />
 <br />
 9) Based on analysis of the Prefetch files, what is the second-most recent execution time of
 “IASTORICON.EXE”?
 
-<img src="https://i.imgur.com/b2fJX8f.png" height="80%" width="80%" alt="dir /r"/>
+<img src="https://i.imgur.com/DIoNYtb.png" height="80%" width="80%" alt="dir /r"/>
 <br />
 <br />
-Time Created
-2020-09-19 04:52:11
+2017-02-01 19:08:54
 <br />
 <br />
 
 <h2>Conclusion </h2>
-This project embarked on a meticulous journey through the intricacies of forensic image conversion and analysis, establishing a potent framework for delving deep into the realms of digital forensics. Here are the significant takeaways and conclusions drawn from this endeavor:
-
-<b>Comprehensive Skill Development:</b> The project facilitated a deep understanding and skill development in forensic image analysis, an essential skill in the contemporary digital forensics domain. This was significantly aided by hands-on experience with tools like FTK Imager and WinHex.
-
-<b>Hands-On Experience with ADS:</b> Working with Alternate Data Streams (ADS) proved to be an enlightening experience, offering insights into the hidden layers of file systems and how they can be utilized for forensic analysis.
-
-<b>Deep Dive into MFT Records:</b> Parsing Master File Table (MFT) records was a challenging yet rewarding task, unveiling the deep-seated data structures and timestamps that are essential in forensic investigations. The MFT Stampede was particularly useful in this regard.
-
-<b>Practical Application of Concepts:</b> The project not only imparted theoretical knowledge but also emphasized practical applications, providing a real-time simulation of forensic analysis processes. This will undoubtedly prove invaluable in real-world forensic analyses.
-
-<b>Understanding File System Properties:</b> The project threw light on the nuanced differences between various file systems like NTFS and FAT32, particularly concerning features like ADS, helping in grasping the broader picture in digital forensic analysis.
-
-<b>Enhanced Proficiency with Forensic Tools:</b> Through the series of tasks undertaken during this project, there was a noticeable enhancement in proficiency with using digital forensic tools and utilities, setting a strong foundation for future endeavors in the field.
-
-<b>Preparation for Advanced Analysis:</b> This project served as an excellent precursor to more advanced analyses in the realm of digital forensics, paving the way for deeper exploration and research in this rapidly evolving field.
-
-<b>Visual Engagement:</b> The addition of visual aids in the walkthrough provided a visual, immersive learning experience, allowing for a more straightforward and practical approach to understanding the concepts at hand.
+The extensive forensic examination of the Windows 10 Pro environment elucidates a significant amount of intricate details concerning both user and system activities over a specific duration. Through the adept utilization of specialized forensic tools, this project exemplifies a methodical approach towards dissecting and analyzing digital artifacts, which is imperative in modern investigative or cybersecurity endeavors.
+<br />
+<br />
+Rich Data Retrieval:
+<br />
+The project demonstrates the ability to retrieve rich data from various system artifacts, showcasing how digital remnants can provide a detailed narrative of user interactions and system events. The meticulous examination of $Recycle.Bin, Scheduled Tasks, Event Logs, and Prefetch files offers a panoramic view of the system's operational landscape over time.
+<br />
+<br />
+Technical Proficiency:
+<br />
+The adept use of forensic tools like $I_Parse, Evtx Explorer, Timeline Explorer, and PECmd underscores the technical proficiency required to navigate and interpret complex digital landscapes. These tools enabled precise analysis and interpretation of digital artifacts, presenting a structured methodology to extract actionable insights.
+<br />
+<br />
+Security and Investigative Implications:
+<br />
+The findings from this project underscore the critical role forensic analysis plays in cybersecurity and investigative fields. By unearthing details like RDP logons, scheduled task configurations, and program executions, the project provides a foundation for identifying anomalous behaviors or potential security threats.
+Future Scalability:
+<br />
+The structured approach showcased in this project lays down a scalable framework that can be adapted for larger or more complex forensic investigations. This scalability is vital in continuously evolving digital domains, ensuring that investigative methodologies remain robust against advancing challenges.
+<br />
+<br />
+Knowledge Advancement:
+<br />
+Engaging in such detailed forensic analysis not only advances individual and organizational knowledge but also contributes to the broader community by sharing methodologies and findings. This project serves as a valuable reference, illustrating a thorough and methodical approach towards understanding and analyzing digital environments.
